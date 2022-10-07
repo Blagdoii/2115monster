@@ -6,15 +6,25 @@
 </head>
 <body>
 <h1>2115.monster</h1>
-<p>Polskie rap radio</p>
+<p>Najlepsze obrazki w internecie! (NSFW) </p>
 <br>
 <br>
 <br>
-  <a href="" class="myButton">Słuchaj stacji #1 </a>
+<div>
+  <button onClick="getimg()" class="myButton">Losuj obrazek </button>
+  </div>
 <br>
 <br>
-  <a href="" class="myButton">Słuchaj stacji #2 </a>
+<script>
+  function getimg() {
+var path = 'https://neko-love.xyz/v1/nekolewd/',
+    imgs = ['neko-love-lewd_42.png','neko-love-lewd_4.jpeg','neko-love-lewd_29.png','neko-love-lewd_1.png','neko-love-lewd_37.jpeg','neko-love-lewd_36.jpg','neko-love-lewd_13.png','neko-love-lewd_36.jpg','neko-love-lewd_39.png'],
+    i = Math.floor(Math.random()*imgs.length);
+$('.el').append("<img src='"+path+imgs[i]+"'>").hide().fadeIn(2000);
+  }
+  </script>
 <br>
+<div class="el"></div>
 <br>
 <br>
 <br>
@@ -27,7 +37,7 @@
 <br>
 <br>
 <p>
-  2022 © mlodykreska#0002 - All rights reserved.
+  2022 © 2115.monster - All rights reserved.
   </p>
 <br>
 </body>
