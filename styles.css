@@ -2,25 +2,23 @@
 h1 {
 font-family: Montserrat;
 color: white;
-text-align: center;
 }
 
 p {
 font-family: Arial;
 color: white;
-text-align: center;
 }
 
 body {
-background-color: rgba(38, 38, 38, 1);
-background-image:  url(https://images.emojiterra.com/mozilla/512px/1f389.png);
-background-size: auto;
-background-position: left top;
-background-repeat: repeat;
+background-color: rgba(46, 45, 44, 1);
+background-image:  url(https://www.svgrepo.com/show/331368/discord-v2.svg);
+background-size: 25%;
+background-position: 25% center;
+background-repeat: no-repeat;
 }
 	  
 div {
-text-align: center;
+text-align: right;
 }
 
 .myButton {
